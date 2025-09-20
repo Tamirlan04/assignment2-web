@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <title>Table and Form Exercise</title>
+  <link rel="stylesheet" href="css/style3.css">
+</head>
+<body>
+  <a href="simple layout.html" class="home-link">Back Home</a>
+  <h1 id="table-heading">My Grades</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Subject</th>
+        <th>Teacher</th>
+        <th>Grade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan ="2">Calculus</td>
+        <td>Kalzhan Bakhtiyar</td>
+        <td>A</td>
+      </tr>
+      <tr>
+        <td>Rakhimbayeva Zhanar</td>
+        <td>B+</td>
+      </tr>
+      <tr>
+        <td>Linear Algebra</td>
+        <td>Mukhamedina Anara</td>
+        <td>A+</td>
+      </tr>
+      <tr>
+        <td> Discrete Math</td>
+        <td> Orikbaeva Aizada</td>
+        <td> A</td>
+      </tr>
+      <tr>
+        <td rowspan = "2"> Introduction to Programming</td>
+        <td> Kazbekova Diana</td>
+        <td> B</td>
+      </tr>
+      <tr>
+        <td>Salkenov Aldiyar</td>
+        <td>B+  </td>
+      </tr>
+      <tr> 
+        <td rowspan ="2">Foreign Language</td>
+        <td>Abdashim Dumankhan</td>
+        <td> A+</td>
+      </tr>
+      <tr> 
+        <td>Deniz Alkan</td>
+        <td>B-</td>
+      </tr>
+      <tr>
+        <td> DBMS</td>
+        <td>Madina Yermaganbetova</td>
+        <td> A+</td>
+      </tr>
+      <tr>
+        <td>ICT</td>
+        <td>Bakyt Bakayeva</td>
+        <td>B-</td>
+      </tr>
+      <tr>
+        <td>Political Science</td>
+        <td>Kaldybekova Aidana</td>
+        <td>A-</td>
+      </tr>
+      <tr>
+        <td>OOP</td>
+        <td>Altynbek Toleu</td>
+        <td>B+</td>
+      </tr>
+      <tr>
+        <td>History of Kazakhstan</td>
+        <td>Satanov Arstan</td>
+        <td>A+</td>
+      </tr>
+      <tr>
+        <td>Sociology</td>
+        <td>Zhanadilova Aigul</td>
+        <td>A+</td>
+      </tr>
+      <tr>
+        <td>Cultural Studies/td>
+        <td>Abildinova Zhanar</td>
+        <td>A+</td>
+      </tr>
+      <tr>
+        <td>Psycholoogy</td>
+        <td>Kospakov Aituar</td>
+        <td>A+</td>
+      </tr>
+      <tr>
+        <td>ADS</td>
+        <td>Gulsipat Abisheva</td>
+        <td>A+</td>
+      </tr>
+      <tr>
+        <td class = "highlight-row"colspan="2">Average Grade</td>
+        <td>B</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <hr>
+
+  <div id="form-container">
+    <h2>Feedback Form</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="role">Role:</label>
+      <select id="role" name="role">
+        <option value="student">Student</option>
+        <option value="teacher">Teacher</option>
+        <option value="other">Other</option>
+      </select>
+
+      <p>Did you find this helpful?</p>
+      <label><input type="radio" name="helpful" value="yes"> Yes</label>
+      <label><input type="radio" name="helpful" value="no"> No</label>
+
+      <label for="comments">Comments:</label>
+      <textarea id="comments" name="comments" rows="4" placeholder="Enter your feedback"></textarea>
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
